@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../ger_estoques/fundo.png);
+    font-family: Bookman, URW Bookman L, serif;
+}
+
+.Banner {
+    height: 100px;
+    width: 400px;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgb(31, 139, 143);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.form-container {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(31, 139, 143);
+    border-radius: 10px;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.btn-row {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.form-container td {
+    padding: 10px 2px;
+    font-size: 17px;
+}
+
+.form-container caption {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 3px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-verde {
+    background-color: green;
+}
+
+.btn-laranja {
+    background-color: orange;
+}
+
+.btn-vermelho {
+    background-color: red;
+}
+
+.form-container input[type="text"] {
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: background-color 0.5s;
+}
+
+.form-container input[type="text"]:focus {
+    outline: none;
+    background-color: lightblue;
+}
+
+.btn-verde,
+.btn-laranja,
+.btn-vermelho {
+    transition: background-color 0.3s, color 0.3s; /* Adiciona a transição de cor */
+}
+
+.btn-verde:hover,
+.btn-laranja:hover,
+.btn-vermelho:hover {
+    background-color: lightblue;
+    color: black; /* Altera a cor do texto para melhor contraste */
+}

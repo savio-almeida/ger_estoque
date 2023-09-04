@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <title>Gerência de estoques</title>
+</head>
+<body>
+    <div class="Banner">Gerência de estoques</div>
+
+    <div class="form-container">
+        <form>
+            <table>
+                <caption>Cadastro de produtos</caption>
+
+                <tr>
+                    <td>Nome do produto:</td>
+                    <td><input id="nomeProduto" type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Quantidade:</td>
+                    <td><input id="quantidade" type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Preço:</td>
+                    <td><input id="preco" type="text"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="btn-row">
+                        <div class="btn-row">
+                            <input type="button" value="Cadastrar" class="btn btn-verde" onclick="validarProduto('nomeProduto', 'quantidade', 'preco')">
+                            <input type="button" value="Ver Estoque" class="btn btn-laranja" onclick="redirectToListaEstoque()">
+                            <input type="reset" value="Limpar" class="btn btn-vermelho">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../fundo.png);
+    font-family: Bookman, URW Bookman L, serif;
+}
+
+/* Estilo para as divs dos produtos registrados */
+.estoque-item {
+    width: 800px; /* Define a largura da div */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaço vertical */
+    padding: 10px;
+    background-color: rgb(31, 139, 143);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* Estilize os detalhes do produto dentro da div */
+.produto-details {
+    font-size: 16px;
+}
+
+
+/* Estilo para centralizar o título "Estoque:" */
+.Banner {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+    color: white;
+}
+
+/* Estilo para o botão "Voltar para o Index" */
+.btn-voltar {
+    display: block;
+    margin: 20px auto; /* Centraliza o botão horizontalmente e adiciona espaço vertical */
+    padding: 10px 20px;
+    border: none;
+    background-color: red; /* Define a cor de fundo vermelha */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+/* Altera a cor de fundo e a cor da fonte quando o mouse está sobre o botão */
+.btn-voltar:hover {
+    background-color: lightblue; /* Altera para lightblue quando o mouse está sobre o botão */
+    color: black; /* Altera a cor da fonte para preto quando o mouse está sobre o botão */
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
